@@ -5,14 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dish</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="tt.css" />
     <link href="http://fonts.cdnfonts.com/css/pristina" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap" rel="stylesheet"/>
   </head>
 
   <body>
@@ -27,7 +24,7 @@
       </a>
     </header>
 
-    <section class="navbar">
+    <div class="navbar">
       <nav class="navbar-links">
         <a href="#" class="navbar-links__item navbar-links__item--selected">Home</a>
         <a href="#" class="navbar-links__item">About us</a>
@@ -36,33 +33,21 @@
       </nav>
       <section class="carousel">
         <div class="carousel__item">
-          <img
-            src="assets/slide.jpg"
-            alt="slide-image"
-            class="carousel__image"
-          />
+          <img src="assets/slide.jpg" alt="slide-image" class="carousel__image"/>
         </div>
         <div class="carousel__item">
-          <img
-            src="assets/slide3.jpg"
-            alt="slide-image"
-            class="carousel__image"
-          />
+          <img src="assets/slide3.jpg" alt="slide-image" class="carousel__image"/>
         </div>
         <h1 class="carousel__heading">Discover the flavours of food</h1>
       </section>
-    </section>
+    </div>
 
     <main class="main-body">
-      <section class="main-container">
+      <div class="main-container">
         <div class="main-container-img">
-          <img
-            src="assets/plate-image.png"
-            alt="plate-image"
-            class="main-container-img__logo"
-          />
+          <img src="assets/plate-image.png" alt="plate-image" class="main-container-img__logo"/>
         </div>
-        <div class="main-container-text">
+        <section class="main-container-text">
           <h2 class="main-container-text__title">
             <span class="main-container-text__title__heading"> Welcome </span>
             to food fun
@@ -74,8 +59,8 @@
             Non, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Vel, id.
           </p>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section class="food-images">
         <h2 class="food-images-title">
@@ -84,114 +69,85 @@
           update
         </h2>
         <div class="food-images-pictures">
-          <img
-            src="assets/food1.jpg"
-            alt="food1-image"
-            class="food-images-pictures__item"
-          />
-          <img
-            src="assets/food2.jpg"
-            alt="food2-image"
-            class="food-images-pictures__item"
-          />
-          <img
-            src="assets/food3.jpg"
-            alt="food3-image"
-            class="food-images-pictures__item"
-          />
-          <img
-            src="assets/food4.jpg"
-            alt="food4-image"
-            class="food-images-pictures__item"
-          />
+          <img src="assets/food1.jpg" alt="food1-image" class="food-images-pictures__item"/>
+          <img src="assets/food2.jpg" alt="food2-image" class="food-images-pictures__item"/>
+          <img src="assets/food3.jpg" alt="food3-image" class="food-images-pictures__item"/>
+          <img src="assets/food4.jpg" alt="food4-image" class="food-images-pictures__item"/>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <section class="container-box">
+      <div class="container-box">
         <div class="container">
-          <div class="container-links">
+          <section class="container-links">
             <h3>Quick Links</h3>
-						<div class="container-links-info">
-							<a href="#" class="container-links-info__item">Home</a>
-							<a href="#" class="container-links-info__item">About Us</a>
-							<a href="#" class="container-links-info__item">Menu</a>
-							<a href="#" class="container-links-info__item">Contact</a>
-						</div>
-          </div>
-          <div class="container-mail">
+						<ul class="container-links-info">
+							<li class="container-links-info__item">
+								<a href="#">Home</a>
+							</li>
+							<li class="container-links-info__item">
+								<a href="#">About Us</a>
+							</li>
+							<li class="container-links-info__item">
+								<a href="#">Menu</a>
+							</li>
+							<li class="container-links-info__item">
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+          </section>
+          <section class="container-mail">
             <h3>News Letter</h3>
             <form class="container-mail-fields">
-              <input
-                type="email"
-                placeholder="Enter Email Address"
-                required
-                class="container-mail-fields__email"
-              />
-              <input
-                type="submit"
-                value="Subscribe"
-                class="container-mail-fields__btn"
-              />
+              <input type="email" placeholder="Enter Email Address" class="container-mail-fields__email" required/>
+              <input type="submit" value="Subscribe" class="container-mail-fields__btn"/>
             </form>
-          </div>
-          <div class="container-contact">
+          </section>
+          <section class="container-contact">
             <h3>Contact Info</h3>
             <ul class="container-contact-box">
               <li class="container-contact-box-item">
-                <img
-                  src="assets/location-icon.png"
-                  alt="location-icon"
-                  class="container-contact-box-item__logo"
-                />
+                <img src="assets/location-icon.png" alt="location-icon" class="container-contact-box-item__logo" />
                 <address class="container-contact-box-item__text">
                   1234 Some St San Francisco,CA 94102, US 1.800,123.4567
                 </address>
               </li>
               <li class="container-contact-box-item">
-                <img
-                  src="assets/phone-icon.png"
-                  alt="phone-icon"
-                  class="container-contact-box-item__logo"
-                />
-                <a href="tel:(123) 456 78 90">(123) 456 78 90</a>
+                <img src="assets/phone-icon.png" alt="phone-icon" class="container-contact-box-item__logo" />
+                <a href="tel:(123)4567890">(123) 456 78 90</a>
               </li>
               <li class="container-contact-box-item">
-								<img
-                  src="assets/envelop-icon.png"
-                  alt="envelop-icon"
-                  class="container-contact-box-item__logo"
-                />
-                <a href="mailto: info@dish.com">info@dish.com</a>
+                <img src="assets/envelop-icon.png" alt="envelop-icon" class="container-contact-box-item__logo" />
+                <a href="mailto:info@dish.com">info@dish.com</a>
               </li>
             </ul>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
 
-      <section class="footer-box">
+      <div class="footer-box">
         <div class="footer-main">
-          <p class="footer-main__copyright">Copyright Dish 2019</p>
+          <span class="footer-main__text">Copyright Dish 2019</span>
           <div class="footer-main-links">
-            <p class="footer-main-links__title">Follow us :</p>
-            <div class="footer-main-links-logos">
-              <a href="#">
-                <img src="assets/fb.png" alt="fb-logo" />
-              </a>
-              <a href="#">
-                <img src="assets/google-plus.png" alt="gplus-logo" />
-              </a>
-              <a href="#">
-                <img src="assets/twiiter.png" alt="twiiter-logo" />
-              </a>
-              <a href="#">
-                <img src="assets/skype.png" alt="skype-logo" />
-              </a>
-            </div>
+            <span class="footer-main__text footer-main__text--title">Follow us :</span>
+						<ul class="footer-main-links-logos">
+							<li>
+								<a href="#"><img src="assets/fb.png" alt="fb-logo"/></a>
+							</li>
+							<li>
+								<a href="#"><img src="assets/google-plus.png" alt="gplus-logo"/></a>
+							</li>
+							<li>
+								<a href="#"><img src="assets/twiiter.png" alt="twiiter-logo"/></a>
+							</li>
+							<li>
+								<a href="#"><img src="assets/skype.png" alt="skype-logo"/></a>
+							</li>
+						</ul>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
 
     <script src="dish.js"></script>
